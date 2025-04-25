@@ -6,10 +6,10 @@ setup() {
     handler
 }
 
-docs() {
+articles() {
     printer "📚 Generating documentation"
-    pandoc ./docs/md/tmp.md \
-    -o ./docs/tmp.pdf \
+    pandoc ./docs/articles/$2.md \
+    -o ./docs/$2.pdf \
     --template=./pandoc-latex-template/template-multi-file/eisvogel.latex \
     --pdf-engine=xelatex
     handler
@@ -34,10 +34,10 @@ case $1 in
     setup)
         setup
         ;;
-    docs)
-        docs
+    articles)
+        articles $@
         ;;
     *)
-        echo "Usage: $0 {setup|docs}"
+        echo "Usage: $0 {setup|articles}"
         ;;
 esac
