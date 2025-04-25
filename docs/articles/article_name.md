@@ -11,7 +11,7 @@ titlepage-color: "FFFFFF"
 titlepage-text-color: "000000"
 titlepage-rule-color: "0000FF"
 toc: true
-toc-own-page: false
+toc-own-page: true
 numbersections: true
 colorlinks: true
 linkcolor: "blue"
