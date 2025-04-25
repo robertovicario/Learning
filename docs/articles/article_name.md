@@ -4,7 +4,7 @@ lang: "en"
 title: "Title"
 subtitle: "Subtitle"
 author: "Author"
-date: "Date"
+date: "YYYY-MM-DD"
 
 titlepage: true
 titlepage-color: "FFFFFF"
