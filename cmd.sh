@@ -8,8 +8,9 @@ setup() {
 
 articles() {
     printer "📚 Generating documentation"
+    mkdir -p ./dist
     pandoc ./docs/articles/$2.md \
-    -o ./docs/$2.pdf \
+    -o ./dist/$2.pdf \
     --template=./pandoc-latex-template/template-multi-file/eisvogel.latex \
     --pdf-engine=xelatex
     handler
