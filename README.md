@@ -13,11 +13,11 @@ You can download my personal notes using the link below. To create your own note
 
 > [!IMPORTANT]
 >
-> - Docker
+> - Pandoc
 
 ## Notes
 
-| <a href="dist/Notes.pdf"><img src="docs/cover.png" alt="cover" height="256"></a> |
+| <a href="https://raw.githubusercontent.com/<username>/<repo_name>/<branch>/dist/Notes.pdf"><img src="docs/cover.png" alt="cover" height="256"></a> |
 | - |
 
 ## Instructions
@@ -36,10 +36,6 @@ If you haven't built the project yet, you can do so by running:
 bash cmd.sh setup
 ```
 
-> [!WARNING]
->
-> `pandoc` installation might take a while, as it needs to download several dependencies.
-
 ### `notes`
 
 The script will automatically generate the `content.pdf` file from the markdown files located in the `docs/md` directory and merge it with your `front.pdf` to create the final `Notes.pdf`:
@@ -50,8 +46,7 @@ bash cmd.sh notes
 
 > [!IMPORTANT]
 >
-> Before running this command, ensure to upload your own `front.pdf` into the `dist` directory.
-> You can even let `pandoc` generate a title page for you by modifying the `titlepage` field in the `docs/md/__metadata__.yml` file, and removing the `front.pdf` reference from the `cmd.sh` script.
+> Before running this command, ensure to upload your own `front.pdf` into the `dist` directory. You can even let `pandoc` generate a title page for you by updating the `titlepage` field in the `docs/md/__metadata__.yml` file, and removing the `front.pdf` reference from the `cmd.sh` script.
 
 ## License
 
