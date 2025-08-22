@@ -9,7 +9,7 @@ setup() {
 notes() {
     printer "📚 Generating documentation"
     mkdir -p dist
-    pandoc docs/articles/md/*.md \
+    pandoc docs/md/*.md \
         -o dist/content_notes.pdf \
         --from=markdown \
         --template=./pandoc-latex-template/template-multi-file/eisvogel.latex \

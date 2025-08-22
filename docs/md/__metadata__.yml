@@ -6,10 +6,10 @@ subtitle: "PhD Thesis @ University of Cambridge"
 author: "Stephen Hawking"
 date: "1965/1966"
 
-titlepage: false
+titlepage: true
 titlepage-color: "FFFFFF"
 titlepage-text-color: "000000"
-titlepage-rule-color: "0000FF"
+titlepage-rule-color: "FF0000"
 toc: true
 toc-own-page: true
 numbersections: true
