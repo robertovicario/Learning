@@ -42,11 +42,16 @@ bash cmd.sh setup
 
 ### `notes`
 
-Before running this command, ensure to upload your own `front.pdf` into the `dist` directory. The script will automatically generate the `content.pdf` file from the markdown files located in the `docs/md` directory and merge it with your `front.pdf` to create the final `Notes.pdf`:
+The script will automatically generate the `content.pdf` file from the markdown files located in the `docs/md` directory and merge it with your `front.pdf` to create the final `Notes.pdf`:
 
 ```sh
 bash cmd.sh notes
 ```
+
+> [!IMPORTANT]
+>
+> Before running this command, ensure to upload your own `front.pdf` into the `dist` directory.
+> You can even let `pandoc` generate a title page for you by modifying the `titlepage` field in the `docs/md/__metadata__.yml` file, and removing the `front.pdf` reference from the `cmd.sh` script.
 
 ## License
 
