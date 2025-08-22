@@ -10,15 +10,16 @@ notes() {
     printer "📚 Generating documentation"
     mkdir -p dist
     pandoc docs/md/*.md \
-        -o dist/content_notes.pdf \
+        -o dist/content.pdf \
+        --metadata-file=docs/md/__metadata__.yml \
         --from=markdown \
-        --template=./pandoc-latex-template/template-multi-file/eisvogel.latex \
+        --template=pandoc-latex-template/template-multi-file/eisvogel.latex \
         --pdf-engine=xelatex \
         --filter=pandoc-latex-environment \
         --listings
     pdfunite \
-        dist/front_notes.pdf \
-        dist/content_notes.pdf \
+        dist/front.pdf \
+        dist/content.pdf \
         dist/Notes.pdf
     handler
 }

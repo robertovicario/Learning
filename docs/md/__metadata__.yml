@@ -6,7 +6,7 @@ subtitle: "PhD Thesis @ University of Cambridge"
 author: "Stephen Hawking"
 date: "1965/1966"
 
-titlepage: true
+titlepage: false
 titlepage-color: "FFFFFF"
 titlepage-text-color: "000000"
 titlepage-rule-color: "FF0000"
