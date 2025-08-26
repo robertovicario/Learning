@@ -3,7 +3,7 @@
 
 # [Course_Name], [BSc_MSc_PhD] Course @ [Your_University]
 
-This repository contains my personal notes for the [Course_Name] course at the [Your_University], part of the [BSC_MSC] in [Faculty_Name].
+This repository contains my personal notes for the [Course_Name] course at the [Your_University], part of the [BSc_MSc_PhD] in [Faculty_Name].
 
 ## Overview
 
