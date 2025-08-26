@@ -1,7 +1,7 @@
 | <img src="docs/logo.svg" width="128"> |
 | - |
 
-# [Course_Name], [BSC_MSC] Course @ [Your_University]
+# [Course_Name], [BSc_MSc] Course @ [Your_University]
 
 This repository contains my personal notes for the [Course_Name] course at the [Your_University], part of the [BSC_MSC] in [Faculty_Name].
 
