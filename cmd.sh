@@ -7,11 +7,11 @@ setup() {
 }
 
 notes() {
-    printer "📚 Generating documentation"
+    printer "📚 Generating notes"
     mkdir -p dist
-    pandoc docs/md/*.md \
+    pandoc md/*.md \
         -o dist/content.pdf \
-        --metadata-file=docs/md/__metadata__.yml \
+        --metadata-file=md/__metadata__.yml \
         --from=markdown \
         --template=pandoc-latex-template/template-multi-file/eisvogel.latex \
         --pdf-engine=xelatex \
