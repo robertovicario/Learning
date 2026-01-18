@@ -9,7 +9,11 @@ setup() {
 notes() {
     printer "📚 Generating notes"
     mkdir -p dist
-    pandoc md/*.md \
+    FILES=()
+    while IFS= read -r f; do
+        FILES+=("$f")
+    done < <(printf "%s\n" md/*.md | sort -V)
+    pandoc "${FILES[@]}" \
         -o dist/content.pdf \
         --metadata-file=md/__metadata__.yml \
         --from=markdown \
