@@ -25,6 +25,7 @@ notes() {
         dist/front.pdf \
         dist/content.pdf \
         dist/Notes.pdf
+    open dist/
     handler
 }
 
